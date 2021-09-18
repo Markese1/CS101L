@@ -1,0 +1,34 @@
+import math
+Lab_grade = int(input('Enter a lab grade: '))
+if Lab_grade > 100:
+    Lab_grade = round(Lab_grade,-2)
+    print('We cannot have values greater than 100 or less than zero it has been rounded')
+if Lab_grade < 0:
+    lab_grade = round(Lab_grade,0)
+    print('We cannot have values greater than 100 or less than zero it has been rounded')
+Exam_grade = int(input('Enter an exam grade: '))
+if Exam_grade > 100:
+    Exam_grade = round(Exam_grade,-2)
+    print('We cannot have values greater than 100 or less than zero it has been rounded')
+if Exam_grade < 0:
+    Exam_grade = round(Exam_grade,0)
+    print('We cannot have values greater than 100 or less than zero it has been rounded')
+Attendance_grade = int(input('Enter an attandance grade: '))
+if Attendance_grade > 100:
+    Attendance_grade = round(Attendance_grade,-2)
+    print('We cannot have values greater than 100 or less than zero it has been rounded')
+if Attendance_grade < 0:
+    Attendance_grade = round(Attendance_grade,0)
+    print('We cannot have values greater than 100 or less than zero it has been rounded')
+Final_grade = (Lab_grade * .7) + (Exam_grade * .2) + (Attendance_grade * .1)
+print(Final_grade)
+if Final_grade >= 90:
+    print('You get an A')
+elif Final_grade >= 80 and Final_grade <= 89:
+    print('You get a B')
+elif Final_grade >= 70 and Final_grade <= 79:
+    print('You get a C')
+elif Final_grade >= 60 and Final_grade <= 69:
+    print('You get a D')
+elif Final_grade <= 59:
+    print('You get an F')
